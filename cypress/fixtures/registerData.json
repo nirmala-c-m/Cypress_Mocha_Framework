@@ -1,0 +1,29 @@
+[
+  {
+    "firstName": "Nirmala",
+    "lastName": "Menon",
+    "phone": "8757896540",
+    "userName": "nirmsds@sfsf.com",
+    "address1": "7 B",
+    "city": "ottappalam",
+    "state": "Kerala",
+    "country": "INDIA",
+    "email": "nirmala",
+    "password": "1234",
+    "confirmPassword": "1234"
+  },
+  {
+    "firstName": "Archana",
+    "lastName": "Chidambaran",
+    "phone": "8757896541",
+    "userName": "nirmsds11@sfsf.com",
+    "address1": "7 B",
+    "city": "Thrissur",
+    "state": "Kerala",
+    "country": "INDIA",
+    "email": "archana",
+    "password": "1234",
+    "confirmPassword": "1234"
+  }
+]
+

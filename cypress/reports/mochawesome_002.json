@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-07-15T07:02:16.051Z",
+    "end": "2024-07-15T07:02:44.923Z",
+    "duration": 28872,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8e7b5f18-4f5b-4616-8707-6c2fa44e4553",
+      "title": "",
+      "fullFile": "cypress/e2e/1111Login.cy.js",
+      "file": "cypress/e2e/1111Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "91d4ba56-fc19-42de-936a-14e70a485621",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should successfully log in with valid credentials",
+              "fullTitle": "Login should successfully log in with valid credentials",
+              "timedOut": null,
+              "duration": 25106,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demo.guru99.com/test/newtours/');\ncy.get('[name=\"userName\"]').should('be.visible').and('be.enabled').type('admin');\ncy.get('[name=\"password\"]').should('be.visible').and('be.enabled').type('admin');\ncy.get('[name=\"submit\"]').should('be.visible').click();\ncy.get('[href=\"reservation.php\"]').should('be.visible').click();\ncy.title().should('eq', 'Find a Flight: Mercury Tours:');\n//radioButtons\ncy.get('[value=\"roundtrip\"]').should('be.visible').should('be.checked');\ncy.get('[value=\"oneway\"]').should('be.visible').should('not.be.checked').click();\n//DropDown\ncy.get('select[name=\"passCount\"]').select('4');\ncy.get('select[name=\"fromPort\"]').select('Acapulco');\ncy.get('select[name=\"fromMonth\"]').select('7');\ncy.get('select[name=\"fromDay\"]').select('12');\ncy.get('select[name=\"toPort\"]').select('Acapulco');\ncy.get('select[name=\"toMonth\"]').select('7');\ncy.get('select[name=\"toDay\"]').select('12');\n//radioButtons\ncy.get('[value=\"Coach\"]').should('be.visible').and('be.checked');\ncy.get('[value=\"Business\"]').should('be.visible').and('not.be.checked').click();\n//AirLine DropDown\ncy.get('select[name=\"airline\"]').select('Unified Airlines');\ncy.get('[name=\"findFlights\"]').should('be.visible').click();\n//register\ncy.title().should('eq', 'Find a Flight: Mercury Tours:');\ncy.get('[href=\"register.php\"]').should('be.visible').click();\ncy.get('[name=\"firstName\"]').should('be.visible').and('be.enabled').type('Nirmala');\ncy.get('[name=\"lastName\"]').should('be.visible').and('be.enabled').type('menon');\ncy.get('[name=\"phone\"]').should('be.visible').and('be.enabled').type('8757896540');\ncy.get('[name=\"userName\"]').should('be.visible').and('be.enabled').type('nirmsds@sfsf.com');\ncy.get('[name=\"address1\"]').should('be.visible').and('be.enabled').type('7 B ');\ncy.get('[name=\"city\"]').should('be.visible').and('be.enabled').type('ottappalam');\ncy.get('[name=\"state\"]').should('be.visible').and('be.enabled').type('Kerala');\ncy.get('select[name=\"country\"]').select('INDIA');\ncy.get('[name=\"email\"]').should('be.visible').should('be.enabled').type('nirmala');\ncy.get('[name=\"password\"]').should('be.visible').should('be.enabled').type('1234');\ncy.get('[name=\"confirmPassword\"]').should('be.visible').should('be.enabled').type('1234');\ncy.get('[name=\"submit\"]').should('be.visible').click();",
+              "err": {},
+              "uuid": "8c90148f-fcd8-4499-8200-8b7894a88716",
+              "parentUUID": "91d4ba56-fc19-42de-936a-14e70a485621",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8c90148f-fcd8-4499-8200-8b7894a88716"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25106,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
