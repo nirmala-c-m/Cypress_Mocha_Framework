@@ -165,6 +165,6 @@ The project is configured for easy integration with CI/CD pipelines. Use the abo
 
 ## Reference
 
-* **Cypress Documentation** :  [https://github.com/Tallyb/cucumber-playwright/tree/master](https://docs.cypress.io/guides/overview/why-cypress)
-* **Mocha Documentation** : [https://github.com/Tallyb/cucumber-playwright/pull/95/files](https://mochajs.org/)
-* **Mochawesome Reporter** : https://www.npmjs.com/package/cypress-mochawesome-reporter
+* **Cypress Documentation** :  https://docs.cypress.io/guides/overview/why-cypress)](https://docs.cypress.io/guides/overview/why-cypress
+* **Mocha Documentation**   : https://mochajs.org/
+* **Mochawesome Reporter**  : https://www.npmjs.com/package/cypress-mochawesome-reporter
