@@ -77,12 +77,16 @@ We can execute the tests in different ways, either via the terminal or using the
     The Cypress Test Runner also logs failed tests, which can be rerun directly from the interface by simply selecting the failed tests and clicking the "Run" button.
 
 ## Execution flow
-Execution in this framework starts from `package.json`. Depending on the command executed in the CLI `test:failed` or `test` (test:failed or test), the corresponding script will be executed.
-Tests to be executed are defined in the feature files located in the cypress/e2e folder. The set of test cases is identified by appropriate tag names using the tags section in cypress-cucumber-preprocessor or CLI.
+* Execution in this framework starts from `package.json`.<br>
+* Depending on the command executed in the CLI `test:failed` or `test` (test:failed or test), the corresponding script will be executed.
+* Tests to be executed are defined in the feature files located in the cypress/e2e folder.<br>
+* The set of test cases is identified by appropriate tag names using the tags section in cypress-cucumber-preprocessor or CLI.
 
 **Argument passing through CLI (tags, browser type etc) -**
-The simplest way to pass arguments to an npm script is to prepend the arguments to the argument parser called npm_config_ and attach the result to the process.env object. In `npm_config_tags` or `npm_config_browsertype`, arguments can be passed from CLI, eg: `npm run test --tags="@Login_Scenario3"`<br>
-**Note:** `TAGS` and `tags` are two different argument. TAGS is not working in linux env.
+* The simplest way to pass arguments to an npm script is to prepend the arguments to the argument parser called npm_config_ and attach the result to the process.env object.<br> 
+
+* In `npm_config_tags` or `npm_config_browsertype`, arguments can be passed from CLI, eg: `npm run test --tags="@Login_Scenario3"`<br>
+**Note:** `TAGS` and `tags` are two different argument. TAGS is not working in linux env.<br>
 
 ### Rerun failed cases
 While executing `npm run test test:failed` package.json -> script -> test:failed will be executed
@@ -104,8 +108,9 @@ While executing `npm run test test:failed` package.json -> script -> test:failed
   
 ## Read test data
 **cypress/Fixtures/Testdata.json**<br>
-Test data reading start from test data path provided in step defined in the feature file. Test data is provided in JSON file in `TestData/{feature name}/{test case01}` path. data reading is implimented in `cypress/utils/dataReader.js`.
-Since we're using cypress-cucumber-preprocessor for testing, the native Cypress report might not be sufficient. Instead, we use multiple-cucumber-html-reporter.
+* Test data reading start from test data path provided in step defined in the feature file.
+* Test data is provided in JSON file in `TestData/{feature name}/{test case01}` path. data reading is implimented in `cypress/utils/dataReader.js`.
+* Since we're using cypress-cucumber-preprocessor for testing, the native Cypress report might not be sufficient. Instead, we use multiple-cucumber-html-reporter.
 
 ## Test reporting
 #### Cypress comes with built-in Mocha reporters for test results. To generate HTML reports or integrate with CI tools, you can use plugins like `mochawesome`.
