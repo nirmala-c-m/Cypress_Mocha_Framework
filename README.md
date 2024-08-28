@@ -158,13 +158,15 @@ The project is configured for easy integration with CI/CD pipelines. Use the abo
 
 
 ## Feature need to add
-* dockerized the framework
-	* https://codefresh.io/blog/not-ignore-dockerignore-2/
-* Need to impliment DB validations
-* Need to create artifactory for the framework
+* dockerized the framework.  https://codefresh.io/blog/not-ignore-dockerignore-2/
+* Need to impliment DB validations.
+* Need to create artifactory for the framework.
 
 ## Reference
 
-* **Cypress Documentation** :  https://docs.cypress.io/guides/overview/why-cypress)](https://docs.cypress.io/guides/overview/why-cypress
-* **Mocha Documentation**   : https://mochajs.org/
-* **Mochawesome Reporter**  : https://www.npmjs.com/package/cypress-mochawesome-reporter
+* **Cypress Documentation** :<br>
+https://docs.cypress.io/guides/overview/why-cypress)](https://docs.cypress.io/guides/overview/why-cypress
+* **Mocha Documentation**   :<br>
+https://mochajs.org/
+* **Mochawesome Reporter**  :<br>
+ https://www.npmjs.com/package/cypress-mochawesome-reporter
